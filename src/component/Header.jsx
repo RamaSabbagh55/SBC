@@ -19,7 +19,7 @@ export default function Header() {
           <a href="#الرئيسية" className="hover:scale-105">
             الرئيسية
           </a>
-          <a href="#عن المركز" className="hover:scale-105">
+          <a href="#عن المركز" className="hover:scale-105 hover:text-black-800 active:text-black ">
             {" "}
             عن المركز
           </a>

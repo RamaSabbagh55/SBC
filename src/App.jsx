@@ -28,6 +28,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Header from "./component/Header";
 import Eservise from "./pages/Eservices";
+import FAQ from "./pages/FAQ";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
       <Home />
       <About />
       <Eservise />
+      <FAQ/>
     </div>
   );
 }

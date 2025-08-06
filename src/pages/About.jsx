@@ -10,13 +10,14 @@ export default function About() {
   return (
     <div
       id="عن المركز"
-      className=" flex justify-center items-center flex-col  h-screen "
+
+      className=" flex justify-center items-center flex-col  h-screen  "
       style={{ color: "var(--primaryColor--)" }}
     >
-      <div className=" flex flex-col justify-center items-center  space-y-3">
+      <div className=" flex flex-col justify-center items-center  ">
         <Htext title=" عن المركز" />
         <h4
-          className=" text-xl mt-5  "
+          className=" text-xl  "
           style={{ color: "var(--secandaryColor--)" }}
         >
           {" "}
@@ -78,7 +79,7 @@ export default function About() {
             الرؤية  
           </h3>
           <h4  className="text-md font-bold text-md text-center "
-            style={{ color: "var(--secandaryColor--)" }}>  أن تصبح المملكة العربية السعودية إحدى </h4>
+            style={{ color: "var(--secandaryColor--)" }}>  أن تصبح المملكة العربية السعودية  </h4>
             <h5   className="text-md font-bold text-md text-center "
             style={{ color: "var(--secandaryColor--)"}}>    الدول العشر الرائدة في العالم </h5>
         </div>
