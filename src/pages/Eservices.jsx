@@ -9,9 +9,9 @@ export default function Eservise() {
 
   return (
 
-    <div id="الخدمات"  className=" flex justify-center items-center flex-col  z-10 h-screen" style={{color:"var(--bgColor--)"}}>
+    <div id="الخدمات"  className=" flex justify-center items-center flex-col  h-screen" style={{color:"var(--bgColor--)"}}>
                   <Htext title="الخدمات الإلكترونية "/>
-      <div className=" flex     space-x-10  ">
+      <div className=" flex space-x-10  ">
         <div className="bg-white rounded-xl shadow-md p-3 text-center w-70 h-50 transition-all duration-300 hover:shadow-lg hover:scale-108 hover:bg-gray-100">
 
 <FontAwesomeIcon

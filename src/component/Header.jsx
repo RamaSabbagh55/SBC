@@ -3,10 +3,10 @@ import VB from "../assets/vision2030.png";
 export default function Header() {
   return (
     // without bg-white the header will be transparent
-    <header className=" w-full fixed top-0 z-50 bg-white " style={{ color: "var( --primaryColor--)" }}>
+    <header className=" w-full fixed top-0 z-50  " style={{ backgroundColor: "var(  --bgCircle--)", color:"var(--textColor--:)"}}  >
       <div
         dir="rtl"
-        className=" flex  justify-between items-center p-4 text-xl flex space-x-10"
+        className=" flex  justify-between items-center p-3 text-md flex space-x-10"
       >
         {/* Logo */}
         <div className=" flex items-center space-x-6  ">
@@ -15,7 +15,7 @@ export default function Header() {
         </div>
 
         {/* Navigation Links */}
-        <nav className="hidden md:flex space-x-10 ml-60">
+        <nav className="hidden md:flex space-x-10 ml-80">
           <a href="#الرئيسية" className="hover:scale-105">
             الرئيسية
           </a>

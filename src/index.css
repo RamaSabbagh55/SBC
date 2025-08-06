@@ -8,8 +8,9 @@
     --bgColor--:rgb(255, 255, 255);
     --secandaryColor--:rgb(182, 188, 193);
     --textColor--:rgba(0, 0, 1, 0.811);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --bgCircle--:rgb(239, 246, 255);
 
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
   }
   body{
         /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
