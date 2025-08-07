@@ -17,8 +17,8 @@ The Saudi Business Center (SBC) is a government entity dedicated to simplifying 
 ## Used technologies 
 * React + Vite 
 * Tailwind CSS v4
-* Vite
 * fontAwsome 
+* Google fonts 
 
 
 ![Saudi Business Center ](src/assets/Home.png)
