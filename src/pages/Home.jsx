@@ -14,16 +14,17 @@ import Header from '../component/Header'
   style={{ backgroundImage: `url(${bg})` }}
 >
   <div className=" mt-20 space-y-7">
-  <h2 className="text-4xl font-bold ">المركز السعودي للأعمال</h2>
+  <h2  className="text-4xl  }}"   >المركز السعودي للأعمال</h2>
   <div className="space-y-1">
-  <h3 className="text-2xl max-w-3xl text-gray-300">
+  <h2 className="text-2xl max-w-3xl  text-gray-300 "   style={{ fontFamily: "var(--font-fontBold)" }}
+>
 مركز يُعنى بتيسير إجراءات بدء الأعمال الاقتصادية، ومزاولتها، وإنهائها 
-  </h3>
-    <h3 className="text-2xl max-w-3xl text-gray-300">
+  </h2>
+    <h2 className="text-2xl max-w-3xl text-gray-300">
 وتقديم جميع الخدمات ذات
  الصلة؛ وفقًا لأفضل الممارسات الدولية
 
-  </h3>
+  </h2>
   </div>
   </div>
 </div>

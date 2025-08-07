@@ -1,21 +1,18 @@
 import logo from "../assets/sbcLogo.png";
-import VB from "../assets/vision2030.png";
+import VB from "../assets/visionBoard.png";
 export default function Header() {
   return (
     // without bg-white the header will be transparent
-    <header className=" w-full fixed top-0 z-50  " style={{ backgroundColor: "var(  --bgCircle--)", color:"var(--textColor--:)"}}  >
+    <header className=" w-full fixed top-0 z-50  " style={{ backgroundColor: "var(  --bgCircle--)", color: "var(--primaryColor--)" }}>
       <div
         dir="rtl"
         className=" flex  justify-between items-center p-3 text-md flex space-x-10"
       >
         {/* Logo */}
-        <div className=" flex items-center space-x-6  ">
-          <img src={logo} alt="لا توجد صورة " width="150" height="50" />
-          <img src={VB} alt="لا توجد صورة " width="70" height="50" />
-        </div>
-
-        {/* Navigation Links */}
-        <nav className="hidden md:flex space-x-10 ml-80">
+        <div className=" flex items-center space-x-6  "> {/*flex start from LTR but in my case start from RTL CUZ    dir="rtl" in the above   */}
+          <img src={logo} alt="شعار الموقع " width="150" height="50" />
+          <img src={VB} alt="  شعار رؤية المملكة العربية السعودية  " width="70" height="50" />
+           <nav className="hidden md:flex space-x-10  justify-end  px-10" style={{color:"var(--primaryColor--)"}}>
           <a href="#الرئيسية" className="hover:scale-105">
             الرئيسية
           </a>
@@ -31,10 +28,11 @@ export default function Header() {
             الأسئلة الشائعة
           </a>
         </nav>
+        </div>
         <div>
           <button
-            className="bg-transparent px-3 py-1.5 text-base
- rounded hover:bg-white border-2  transition duration-700 ease-in-out "
+            className="bg-blue-800 text-white text-xs px-4 py-1.5 
+ rounded-3xl transition duration-700 ease-in-out  shadow-m "
           >
             سجل الان
           </button>

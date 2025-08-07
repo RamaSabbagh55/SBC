@@ -47,12 +47,12 @@ export default function About() {
               style={{ color: "var(--primaryColor--)" }}
             />
           </div>
-          <h3
+          <h2
             className="text-md font-black text-xl text-center  mb-5"
             style={{ color: "var(--primaryColor--)" }}
           >
             الهدف  
-          </h3>
+          </h2>
           <h4  className="text-md font-bold text-md text-center "
             style={{ color: "var(--secandaryColor--)" }}>تسهيل بدء وممارسة الأعمال الاقتصادية</h4>
             <h5   className="text-md font-bold text-md text-center "
@@ -72,16 +72,16 @@ export default function About() {
               style={{ color: "var(--primaryColor--)" }}
             />
           </div>
-          <h3
+          <h2
             className="text-md font-black text-xl text-center  mb-5"
             style={{ color: "var(--primaryColor--)" }}
           >
             الرؤية  
-          </h3>
+          </h2>
           <h4  className="text-md font-bold text-md text-center "
-            style={{ color: "var(--secandaryColor--)" }}>  أن تصبح المملكة العربية السعودية  </h4>
+            style={{ color: "var(--secandaryColor--)" }}>    أن تصبح المملكة العربية السعودية من</h4>
             <h5   className="text-md font-bold text-md text-center "
-            style={{ color: "var(--secandaryColor--)"}}>    الدول العشر الرائدة في العالم </h5>
+            style={{ color: "var(--secandaryColor--)"}}>    الدول العشرة الرائدة في العالم </h5>
         </div>
 
         
@@ -99,16 +99,16 @@ export default function About() {
               style={{ color: "var(--primaryColor--)" }}
             />
           </div>
-          <h3
+          <h2
             className="text-md font-black text-xl text-center  mb-5"
             style={{ color: "var(--primaryColor--)" }}
           >
             الرسالة  
-          </h3>
+          </h2>
           <h4  className="text-md font-bold text-md text-center "
             style={{ color: "var(--secandaryColor--)" }}> تقديم نموذج خدمات يعزز القدرة التنافسية </h4>
             <h5   className="text-md font-bold text-md text-center "
-            style={{ color: "var(--secandaryColor--)"}}>  وخلق بيئة أعمال جاذبة </h5>
+            style={{ color: "var(--secandaryColor--)"}}>  وخلق بيئة أعمال جذابة </h5>
         </div>
 
       </div>
