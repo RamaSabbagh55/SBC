@@ -1,11 +1,11 @@
 import Htext from '../component/HText'
 export default function FAQ(){
 return(
-    
-<div id ="الأسئلة الشائعة" className="  h-screen w-full flex flex-col  mb-0 space-y-4">
+
+<div id ="الأسئلة الشائعة" className="  h-screen w-full  justify-center items-center flex flex-col  space-y-4">
     {/* <div className=' flex justify-center items-center '> */}
             <Htext title="الأسئلة الشائعة "/>
-    {/* </div> */}
+
 <div className='p-2 w-300 h-20  border-2 border-blue-900 rounded-lg justify-center items-center ml-7  transition-all duration-300   hover:shadow-xl  hover:bg-gray-100'>
       <div  dir="rtl"  className="mb-6 flex text-right flex-col   ">
         <h2 className="text-lg  text-right font-semibold mb-2" style={{color:"var(--primaryColor--)"}}>ماهي البرامج التابعة للمركز السعودي للأعمال؟   </h2>

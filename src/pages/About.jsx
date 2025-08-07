@@ -15,15 +15,15 @@ export default function About() {
       style={{ color: "var(--primaryColor--)" }}
     >
       <div className=" flex flex-col justify-center items-center  ">
+        <div>
         <Htext title=" عن المركز" />
         <h4
           className=" text-xl  "
           style={{ color: "var(--secandaryColor--)" }}
         >
-          {" "}
           نُمكّن الأعمال من الانطلاق والنمو بسرعة وكفاءة أكبر من خلال تقديم
           خدمات متكاملة لتأسيس وممارسة وإنهاء الأعمال
-        </h4>
+        </h4></div>
         <h4
           className=" text-xl  mb-20 "
           style={{ color: "var(--secandaryColor--)" }}

@@ -31,8 +31,8 @@ export default function Header() {
         </div>
         <div>
           <button
-            className="bg-blue-800 text-white text-xs px-4 py-1.5 
- rounded-3xl transition duration-700 ease-in-out  shadow-m "
+            className="text-white text-xs px-4 py-1.5 active:shadow-s
+ rounded-3xl transition duration-700 ease-in-out  shadow-m  hover:scale-110  ml-5 " style={{background:"var(--primaryColor--)"}}
           >
             سجل الان
           </button>
