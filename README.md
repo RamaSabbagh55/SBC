@@ -4,8 +4,8 @@
 # Saudi Business Center 
 #  Overview
 The Saudi Business Center (SBC) is a government entity dedicated to simplifying the procedures for starting, operating, and ending economic activities in the Kingdom of Saudi Arabia.
-# Live Preview  [#]  
-## click on the link to view Live site in your browser.
+<!-- # Live Preview  [#]  
+## click on the link to view Live site in your browser. -->
 
 
 ## Website's different features 
