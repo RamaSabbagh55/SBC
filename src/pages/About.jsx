@@ -6,6 +6,8 @@ import {
   faLightbulb,
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
+
+import AboutComponent from "../component/AboutComponent";
 export default function About() {
   return (
     <div
@@ -35,7 +37,7 @@ export default function About() {
       <div className=" flex space-x-10  ">
     
 
-        <div className="flex flex-col items-center ">
+        {/* <div className="flex flex-col items-center ">
           <div
             className="w-20 h-20 rounded-full flex items-center justify-center  mb-5"
             style={{ backgroundColor: "var(--bgCircle--)" }}
@@ -57,10 +59,15 @@ export default function About() {
             style={{ color: "var(--secandaryColor--)" }}>تسهيل بدء وممارسة الأعمال الاقتصادية</h4>
             <h5   className="text-md font-bold text-md text-center "
             style={{ color: "var(--secandaryColor--)"}}> وتحسين جودة المتطلبات الحكومية </h5>
-        </div>
+        </div> */}
+<AboutComponent
+icon={faLifeRing}
+h1="الهدف"
+p1="تسهيل بدء وممارسة الأعمال الاقتصادية"
+p2="وتحسين جودة المتطلبات الحكومية"
+/>
 
-
-             <div className="flex flex-col items-center ">
+             {/* <div className="flex flex-col items-center ">
           <div
             className="w-20 h-20 rounded-full flex items-center justify-center  mb-5"
             style={{ backgroundColor: "var(--bgCircle--)" }}
@@ -82,12 +89,17 @@ export default function About() {
             style={{ color: "var(--secandaryColor--)" }}>    أن تصبح المملكة العربية السعودية من</h4>
             <h5   className="text-md font-bold text-md text-center "
             style={{ color: "var(--secandaryColor--)"}}>    الدول العشرة الرائدة في العالم </h5>
-        </div>
-
+        </div> */}
+<AboutComponent
+icon={faLightbulb}
+h1="الرؤية"
+p1=" أن تصبح المملكة العربية السعودية من"
+p2="الدول العشرة الرائدة في العالم "
+/>
         
 
 
-          <div className="flex flex-col items-center ">
+          {/* <div className="flex flex-col items-center ">
           <div
             className="w-20 h-20 rounded-full flex items-center justify-center  mb-5"
             style={{ backgroundColor: "var(--bgCircle--)" }}
@@ -109,7 +121,15 @@ export default function About() {
             style={{ color: "var(--secandaryColor--)" }}> تقديم نموذج خدمات يعزز القدرة التنافسية </h4>
             <h5   className="text-md font-bold text-md text-center "
             style={{ color: "var(--secandaryColor--)"}}>  وخلق بيئة أعمال جذابة </h5>
-        </div>
+        </div> */}
+
+        <AboutComponent
+icon={faEnvelope}
+h1="الرسالة"
+p1=" تقديم نموذج خدمات يعزز القدرة التنافسية "
+p2="   وخلق بيئة أعمال جذابة   "
+/>
+        
 
       </div>
     </div>
