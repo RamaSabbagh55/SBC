@@ -5,9 +5,7 @@ return(
 
 <div id ="الأسئلة الشائعة" className="  h-screen w-full  justify-center items-center flex flex-col  space-y-4">
     {/* <div className=' flex justify-center items-center '> */}
-            <Htext title="الأسئلة الشائعة "/>
-
-
+ <Htext title="الأسئلة الشائعة "/>
 <FAQComponent
  question="ماهي البرامج التابعة للمركز السعودي للأعمال؟"
  answer="برنامج قوائم والسجل الموحد للحقوق على الأموال المنقولة
