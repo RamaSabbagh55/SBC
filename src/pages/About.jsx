@@ -37,29 +37,6 @@ export default function About() {
       <div className=" flex space-x-10  ">
     
 
-        {/* <div className="flex flex-col items-center ">
-          <div
-            className="w-20 h-20 rounded-full flex items-center justify-center  mb-5"
-            style={{ backgroundColor: "var(--bgCircle--)" }}
-          >
-            <FontAwesomeIcon
-              icon={faLifeRing}
-              bounce
-              className="text-4xl"
-              style={{ color: "var(--primaryColor--)" }}
-            />
-          </div>
-          <h2
-            className="text-md font-black text-xl text-center  mb-5"
-            style={{ color: "var(--primaryColor--)" }}
-          >
-            الهدف  
-          </h2>
-          <h4  className="text-md font-bold text-md text-center "
-            style={{ color: "var(--secandaryColor--)" }}>تسهيل بدء وممارسة الأعمال الاقتصادية</h4>
-            <h5   className="text-md font-bold text-md text-center "
-            style={{ color: "var(--secandaryColor--)"}}> وتحسين جودة المتطلبات الحكومية </h5>
-        </div> */}
 <AboutComponent
 icon={faLifeRing}
 h1="الهدف"
@@ -67,29 +44,6 @@ p1="تسهيل بدء وممارسة الأعمال الاقتصادية"
 p2="وتحسين جودة المتطلبات الحكومية"
 />
 
-             {/* <div className="flex flex-col items-center ">
-          <div
-            className="w-20 h-20 rounded-full flex items-center justify-center  mb-5"
-            style={{ backgroundColor: "var(--bgCircle--)" }}
-          >
-            <FontAwesomeIcon
-              icon={faLightbulb}
-              bounce
-              className="text-4xl"
-              style={{ color: "var(--primaryColor--)" }}
-            />
-          </div>
-          <h2
-            className="text-md font-black text-xl text-center  mb-5"
-            style={{ color: "var(--primaryColor--)" }}
-          >
-            الرؤية  
-          </h2>
-          <h4  className="text-md font-bold text-md text-center "
-            style={{ color: "var(--secandaryColor--)" }}>    أن تصبح المملكة العربية السعودية من</h4>
-            <h5   className="text-md font-bold text-md text-center "
-            style={{ color: "var(--secandaryColor--)"}}>    الدول العشرة الرائدة في العالم </h5>
-        </div> */}
 <AboutComponent
 icon={faLightbulb}
 h1="الرؤية"
@@ -99,31 +53,7 @@ p2="الدول العشرة الرائدة في العالم "
         
 
 
-          {/* <div className="flex flex-col items-center ">
-          <div
-            className="w-20 h-20 rounded-full flex items-center justify-center  mb-5"
-            style={{ backgroundColor: "var(--bgCircle--)" }}
-          >
-            <FontAwesomeIcon
-              icon={faEnvelope}
-              bounce
-              className="text-4xl"
-              style={{ color: "var(--primaryColor--)" }}
-            />
-          </div>
-          <h2
-            className="text-md font-black text-xl text-center  mb-5"
-            style={{ color: "var(--primaryColor--)" }}
-          >
-            الرسالة  
-          </h2>
-          <h4  className="text-md font-bold text-md text-center "
-            style={{ color: "var(--secandaryColor--)" }}> تقديم نموذج خدمات يعزز القدرة التنافسية </h4>
-            <h5   className="text-md font-bold text-md text-center "
-            style={{ color: "var(--secandaryColor--)"}}>  وخلق بيئة أعمال جذابة </h5>
-        </div> */}
-
-        <AboutComponent
+<AboutComponent
 icon={faEnvelope}
 h1="الرسالة"
 p1=" تقديم نموذج خدمات يعزز القدرة التنافسية "
