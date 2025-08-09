@@ -3,7 +3,7 @@ import FAQComponent from '../component/FAQComponent'
 export default function FAQ(){
 return(
 
-<div id ="الأسئلة الشائعة" className="  h-screen w-full  justify-center items-center flex flex-col  space-y-4">
+<div id ="الأسئلة الشائعة" className="  h-screen w-full  justify-center items-center flex flex-col  space-y-4 " style={{backgroundColor:"var(--bgColor--)"}}>
     {/* <div className=' flex justify-center items-center '> */}
  <Htext title="الأسئلة الشائعة "/>
 <FAQComponent

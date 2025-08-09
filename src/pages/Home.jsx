@@ -10,17 +10,17 @@ import Header from '../component/Header'
 
 <div
   id="الرئيسية"
-  className="min-h-screen bg-cover bg-center flex flex-col justify-center items-center text-center text-white  "
-  style={{ backgroundImage: `url(${bg})` }}
+  className="min-h-screen bg-cover bg-center flex flex-col justify-center items-center text-center  "
+  style={{ backgroundImage: `url(${bg}) `,backgroundColor:"var(--bgColor--)", color:"var(--textColor--)"}}
 >
   <div className=" mt-20 space-y-7">
-  <h2  className="text-4xl  }}"   >المركز السعودي للأعمال</h2>
+  <h2  className="text-4xl    }}"   >المركز السعودي للأعمال</h2>
   <div className="space-y-1">
-  <h2 className="text-2xl max-w-3xl  text-gray-300 "   style={{ fontFamily: "var(--font-fontBold)" }}
+  <h2 className="text-2xl max-w-3xl  text-gray-300   "   
 >
 مركز يُعنى بتيسير إجراءات بدء الأعمال الاقتصادية، ومزاولتها، وإنهائها 
   </h2>
-    <h2 className="text-2xl max-w-3xl text-gray-300">
+    <h2 className="text-2xl max-w-3xl text-gray-300  ">
 وتقديم جميع الخدمات ذات
  الصلة؛ وفقًا لأفضل الممارسات الدولية
 

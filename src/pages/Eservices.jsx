@@ -10,7 +10,7 @@ export default function Eservise() {
     <div
       id="الخدمات"
       className=" flex justify-center items-center flex-col  h-screen"
-      style={{ color: "var(--bgColor--)" }}
+      style={{ color: "var(--bgColor--)" ,backgroundColor:"var(--bgColor--)"}}
     >
       <Htext title="الخدمات الإلكترونية " />
       <div className=" flex space-x-10  ">
@@ -25,7 +25,15 @@ export default function Eservise() {
           icon={faAddressCard}
           text=" سجل تجاري لمؤسسة فردية  "
         />
+
+
       </div>
     </div>
+
+
+
+
+
+
   );
 }

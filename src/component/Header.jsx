@@ -6,7 +6,7 @@ export default function Header() {
     <header className=" w-full fixed top-0 z-50  " style={{ backgroundColor: "var(  --bgCircle--)", color: "var(--primaryColor--)" }}>
       <div
         dir="rtl"
-        className=" flex  justify-between items-center p-3 text-md flex space-x-10"
+        className=" flex  justify-between items-center p-3 text-md  space-x-10"
       >
         {/* Logo */}
         <div className=" flex items-center space-x-6  "> {/*flex start from LTR but in my case start from RTL CUZ    dir="rtl" in the above   */}

@@ -5,13 +5,13 @@
   --primaryColor--: rgba(34, 83, 147);
   --bgColor--: rgb(255, 255, 255);
   --secandaryColor--: rgb(182, 188, 193);
-  --textColor--: rgba(0, 0, 1, 0.811);
+  --textColor--: rgb(255, 255, 255);
   --bgCircle--: rgb(239, 246, 255);
   --font-fontBold: "boldFont";
   --extraBoldFont--: "extraBold";
   --meduimFont--:"mediumFont":
 }
-
+/* تعريف خطوط مخصصة */
 @font-face {
   font-family: "boldFont";
   src: url(/src/assets/fonts/Tajawal-Bold.ttf);

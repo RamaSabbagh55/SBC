@@ -14,7 +14,7 @@ export default function About() {
       id="عن المركز"
 
       className=" flex justify-center items-center flex-col  h-screen  "
-      style={{ color: "var(--primaryColor--)" }}
+      style={{ color: "var(--primaryColor--)", backgroundColor:"var(--bgColor--)" }}
     >
       <div className=" flex flex-col justify-center items-center  ">
         <div>
