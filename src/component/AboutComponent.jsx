@@ -4,7 +4,7 @@ export default function AboutComponent({icon, h1, p1, p2}){
     return(
                <div className="flex flex-col items-center ">
                   <div
-                    className="w-20 h-20 rounded-full flex items-center justify-center  mb-5"
+                    className="w-22 h-22 rounded-full flex items-center justify-center  mb-5"
                     style={{ backgroundColor: "var(--bgCircle--)" }}
                   >
                     <FontAwesomeIcon

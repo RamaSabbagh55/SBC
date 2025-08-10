@@ -13,19 +13,19 @@ export default function Footer() {
         <div className="space-x-4">
 <div className="flex space-x-6 text-xl items-center ">
           <a href="https://www.linkedin.com/company/bcgovsa/?originalSubdomain=sa" target="_blank" >
-            <FontAwesomeIcon icon={faLinkedin} />
+            <FontAwesomeIcon icon={faLinkedin}  className="hover:text-blue-500 transition duration-300"/>
           </a>
           <a href="https://api.whatsapp.com/send/?phone=00966112822881&text&type=phone_number&app_absent=0" >
-            <FontAwesomeIcon icon={faWhatsapp} />
+            <FontAwesomeIcon icon={faWhatsapp}  className="hover:text-green-500 transition duration-300"/>
           </a>
           <a href="https://x.com/BCgov_Care" target="_blank" >
-          <FontAwesomeIcon icon={faXTwitter} />
+          <FontAwesomeIcon icon={faXTwitter} className="hover:text-black transition duration-300"  />
           </a>
-          <a href="https://www.youtube.com/channel/UC1mSbR2yfVqz6nn5sSBYa9g" target="_blank" >
-            <FontAwesomeIcon icon={faYoutube} />
+          <a href="https://www.youtube.com/channel/UC1mSbR2yfVqz6nn5sSBYa9g" target="_blank"  >
+            <FontAwesomeIcon icon={faYoutube}  className="hover:text-red-400 transition duration-300" />
           </a>
           <a href="https://www.instagram.com/bcgovsa/" target="_blank" >
-            <FontAwesomeIcon icon={faInstagram} />
+            <FontAwesomeIcon icon={faInstagram}  className="hover:text-pink-300 transition duration-300"/>
           </a>
         </div>
         </div>
@@ -37,8 +37,7 @@ export default function Footer() {
 
         </div>
 
-     
-
+  
              <p className="text-sm">المركز السعودي للأعمال جميع الحقوق    
             <p className="text-sm text-center"> &copy;  {currentYear}   محفوظة</p>
         </p>

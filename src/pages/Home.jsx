@@ -9,8 +9,8 @@ import Header from '../component/Header'
 
 
 <div
-  id="الرئيسية"
-  className="min-h-screen bg-cover bg-center flex flex-col justify-center items-center text-center  "
+  id="الرئيسية" 
+  className="h-screen bg-cover bg-center flex flex-col justify-center items-center text-center  "
   style={{ backgroundImage: `url(${bg}) `,backgroundColor:"var(--bgColor--)", color:"var(--textColor--)"}}
 >
   <div className=" mt-20 space-y-7">

@@ -6,8 +6,8 @@ import {
   faLightbulb,
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
-
 import AboutComponent from "../component/AboutComponent";
+
 export default function About() {
   return (
     <div
@@ -16,7 +16,8 @@ export default function About() {
       className=" flex justify-center items-center flex-col  h-screen  "
       style={{ color: "var(--primaryColor--)", backgroundColor:"var(--bgColor--)" }}
     >
-      <div className=" flex flex-col justify-center items-center  ">
+      {/* <div className=" flex flex-col  justify-center items-center  ">  */}
+        {/* // focus  */}
         <div>
         <Htext title=" عن المركز" />
         <h4
@@ -33,7 +34,7 @@ export default function About() {
           {" "}
           وفق أفضل المعايير الدولية وتحت إشراف موحد
         </h4>
-      </div>
+      {/* </div> */}
       <div className=" flex space-x-10  ">
     
 
