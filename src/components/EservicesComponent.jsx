@@ -1,14 +1,17 @@
 import React from "react";
+
+import { motion as Motion } from "motion/react";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function EsevicesCompoonent({ icon, text }) {
   return (
-    <div className="bg-white rounded-3xl shadow-md p-3 text-center w-70 h-50 transition-all duration-300 hover:shadow-xl  hover:scale-105 ">
-      {/* <FontAwesomeIcon
-        icon={icon}
-        style={{ color: "var(--primaryColor--)" }}
-        className=" mt-6 text-5xl"
-      /> */}
+    <Motion.div
+      className="bg-white rounded-3xl shadow-md p-3 text-center w-70 h-50 transition-all duration-300 hover:shadow-xl  hover:scale-105 "
+      initial={{ y: 50, opacity: 0 }} 
+      whileInView={{ y: 0, opacity: 1 }} 
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      viewport={{ once: false }}//حركه لا نهائية
+    >
       <div className=" flex justify-center items-center">
         <img src={icon} alt="goal icon" className="w-25 h-25" />
       </div>
@@ -18,6 +21,6 @@ export default function EsevicesCompoonent({ icon, text }) {
       >
         {text}
       </h3>
-    </div>
+    </Motion.div>
   );
 }

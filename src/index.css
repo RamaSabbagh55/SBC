@@ -1,3 +1,5 @@
+
+
 @import "tailwindcss";
 
 /* for general style  */
@@ -38,10 +40,25 @@ font-family: --regularFont-- ;
 src: url(/src/assets/fonts/Tajawal-Regular.ttf)
 } */
 
-h1,h2,nav {
+h1,h2,nav , h3,p,span {
   font-family: var(--font-fontBold)
 }
- h3{
+ /* h3,p,a{
   font-family: var(--meduimFont--);
- }
+ } */
+/* *{
+    font-family: var(--meduimFont--);
+} */
+*{
+    font-family: var(--font-fontBold)
 
+}
+/* body {
+  margin: 0;
+  overflow-x: hidden;
+} */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+
+}

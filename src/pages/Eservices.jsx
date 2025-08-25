@@ -2,8 +2,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faBuilding } from "@fortawesome/free-regular-svg-icons"; // regular version
 // import { faSchoolCircleExclamation } from "@fortawesome/free-solid-svg-icons";
 // import { faAddressCard } from "@fortawesome/free-regular-svg-icons/faAddressCard";
-import Htext from "../component/HText";
-import EsevicesCompoonent from "../component/EservicesComponent";
+import Htext from "../components/HText";
+import EsevicesCompoonent from "../components/EservicesComponent";
 import gif1 from "../assets/icons/goal-icon-1.gif";
 import gif2 from "../assets/icons/goal-icon-2.gif";
 import gif3 from "../assets/icons/goal-icon-3.gif";
@@ -14,12 +14,12 @@ export default function Eservise() {
   return (
     <div
       id="الخدمات"
-      className=" flex justify-center items-center flex-col  h-screen" 
+      className=" flex justify-center items-center flex-col  min-h-screen" 
       // justify = تحديد محاذاة العناصر على المحور الرئيسي (Main Axis).
       style={{ color: "var(--bgColor--)" ,backgroundColor:"var(--bgColor--)"}}
     >
       <Htext title="الخدمات الإلكترونية " />
-      <div className=" flex space-x-10  ">
+      <div className=" flex  flex-wrap  justify-center space-x-3 md: space-y-5 ">
         {/* <EsevicesCompoonent icon={faBuilding} text="تأسيس شركة مساهمة" />
         
         <EsevicesCompoonent
@@ -55,3 +55,5 @@ export default function Eservise() {
 
   );
 }
+
+

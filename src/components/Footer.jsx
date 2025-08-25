@@ -6,12 +6,12 @@ import { faLinkedin, faWhatsapp,faXTwitter, faYoutube, faInstagram } from "@fort
 export default function Footer() {
      const currentYear = new Date().getFullYear();// current date
   return (
-    <footer className=" text-white py-5 px-12" style={{background:"var(--primaryColor--)", color:"var(--textColor--)"}}>
+    <footer dir="ltr" className=" text-white py-5 px-12" style={{background:"var(--primaryColor--)", color:"var(--textColor--)"}}>
       <div className="  flex flex-row justify-between items-center text-xs">
       
       
         <div className="space-x-4">
-<div className="flex space-x-6 text-xl items-center ">
+<div className="flex space-x-6 text-xl items-center  ">
           <a href="https://www.linkedin.com/company/bcgovsa/?originalSubdomain=sa" target="_blank" >
             <FontAwesomeIcon icon={faLinkedin}  className="hover:text-blue-500 transition duration-300"/>
           </a>
@@ -30,14 +30,13 @@ export default function Footer() {
         </div>
         </div>
               <div dir="RTL" className="flex space-x-5  text-sm">
-          <a href="#الرئيسية" className=" transition">الرئيسية</a>
-          <a href="#عن المركز " className=" transition">عن المركز</a>
-          <a href="#الخدمات " className=" transition">الخدمات الإلكترونية </a>
-          <a href="#الأسئلة الشائعة" className=" transition">الأسئلة الشائعة  </a>
+          <a href="#الرئيسية" className=" transition hover:scale-105">الرئيسية</a>
+          <a href="#عن المركز " className=" transition hover:scale-105">عن المركز</a>
+          <a href="#الخدمات " className=" transition hover:scale-105">الخدمات الإلكترونية </a>
+          <a href="#الأسئلة الشائعة" className=" transition hover:scale-105">الأسئلة الشائعة  </a>
 
         </div>
 
-  
              <p className="text-sm">المركز السعودي للأعمال جميع الحقوق    
             <p className="text-sm text-center"> &copy;  {currentYear}   محفوظة</p>
         </p>
