@@ -19,18 +19,8 @@ export default function Eservise() {
       style={{ color: "var(--bgColor--)" ,backgroundColor:"var(--bgColor--)"}}
     >
       <Htext title="الخدمات الإلكترونية " />
-      <div className=" flex  flex-wrap  justify-center space-x-3 md: space-y-5 ">
-        {/* <EsevicesCompoonent icon={faBuilding} text="تأسيس شركة مساهمة" />
-        
-        <EsevicesCompoonent
-          icon={faSchoolCircleExclamation}
-          text="تأسيس شركة ذات مسؤولية محدودة"
-        />
+      <div className=" flex  flex-wrap  justify-center  gap-10 md:gap-y-14">
 
-        <EsevicesCompoonent
-          icon={faAddressCard}
-          text=" سجل تجاري لمؤسسة فردية  "
-        /> */}
           <EsevicesCompoonent
           icon={gif1}
           text="  إدارة التفاويض  "

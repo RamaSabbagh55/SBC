@@ -7,21 +7,21 @@ import Eservise from "./pages/Eservices";
 import FAQ from "./pages/FAQ";
 import Footer from "./components/Footer";
 import Sidebar from "./components/Sidebar"
-import Our from "./pages/Our";
-import FAQComponent from "./components/FAQComponent"
-import Count from"./pages/Count"
+// import Our from "./pages/Our";
+// import FAQComponent from "./components/FAQComponent"
+// import Count from"./pages/Count"
 
 function App() {
   return (
     <div >
-      <Sidebar/>
+      {/* <Sidebar/> */}
       <Header/>
       <Home />
       <About />
       <Eservise />
       <FAQ/>
-      <Our/>
-      <Count/>
+      {/* <Our/> */}
+      {/* <Count/> */}
       <Footer/>
     </div>
   );

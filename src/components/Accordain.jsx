@@ -5,7 +5,7 @@ import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 const Accordain = ({ title, answer }) => {
   const [accordainOpen, setAccordainOpen] = useState(false);
   return (
-    <div className=" py-5">
+    <div className=" py-5 ">
       <button
         onClick={() => setAccordainOpen(!accordainOpen)}
         className="flex justify-between  w-full cursor-pointer"

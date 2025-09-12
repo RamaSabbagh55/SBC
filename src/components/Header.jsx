@@ -1,24 +1,40 @@
 import logo from "../assets/sbcLogo.png";
 import VB from "../assets/visionBoard.png";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export default function Header() {
-  const [active, setActive] = useState("#الرئيسية");
-const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [active, setActive] = useState("الرئيسية");
 
-  const handleClick = (link) => {
-    setActive(link);
-    document.getElementById(link)?.scrollIntoView({ behavior: "smooth" });
-  };
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = ["الرئيسية", "عن المركز", "الخدمات", "الأسئلة الشائعة"];
+
+      for (let section of sections) {
+        const element = document.getElementById(section);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          if (rect.top <= 100 && rect.bottom >= 100) {
+            setActive(section);
+            break; // توقف البحث عن القسم البعده
+          }
+        }
+      }
+    };
+    console.log("Updattting !");
+    console.log("HI");
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    // without bg-white the header will be transparent
     <header
-      className="  w-full fixed top-0 z-50  "
       style={{
         backgroundColor: "var(  --bgCircle--)",
         color: "var(--primaryColor--)",
       }}
+      className="  w-full fixed top-0 z-50 dark:bg-slate-800  "
     >
       <div className=" flex items-center justify-between   ">
         {/* Logo */}
@@ -35,12 +51,12 @@ const [menuOpen, setMenuOpen] = useState(false);
             />
           </div>
           <nav className=" hidden md:flex gap-6 p-4">
-            {["الرئيسية", "عن المركز", "الخدمات", "الأسئلة الشائعة "].map(
+            {["الرئيسية", "عن المركز", "الخدمات", "الأسئلة الشائعة"].map(
               (link) => (
                 <a
                   key={link}
                   href={`#${link}`}
-                  onClick={() => handleClick(link)}
+                  // onClick={() => handleClick(link)}
                   className={`cursor-pointer hover:scale-105 transition ${
                     active === link
                       ? "font-extrabold text-black border-b-2 border-black"
@@ -54,42 +70,45 @@ const [menuOpen, setMenuOpen] = useState(false);
           </nav>
         </div>
         <div className=" ml-6  ">
-          <button 
+          <button
             className="  text-white text-xs px-4 py-1.5 active:shadow-s
  rounded-3xl transition duration-700 ease-in-out hidden sm:block shadow-m  hover:scale-110 cursor-pointer "
             style={{ background: "var(--primaryColor--)" }}
           >
             سجل الان
-          </button  >
+          </button>
 
-           <div className="md:hidden ">
-        <button
-          onClick={() => setMenuOpen(!menuOpen)}
-          className="text-white text-xl px-3 py-1 rounded bg-blue-600 "
-        >
-          ☰
-        </button>
-      </div>
+          <div className="md:hidden ">
+            <button
+              style={{ backgroundColor: "var(--primaryColor--)" }}
+              onClick={() => setMenuOpen(!menuOpen)}
+              className="text-white text-xl px-3 py-1 rounded"
+            >
+              ☰
+            </button>
+          </div>
         </div>
       </div>
-        {/* Mobile Menu Example */}
-    {menuOpen && (
-    <div className="absolute top-full right-0 w-48 bg-white shadow-lg flex flex-col text-right p-4 md:hidden">
-      {["الرئيسية", "عن المركز", "الخدمات", "الأسئلة الشائعة"].map((link) => (
-        <a
-          key={link}
-          href={`#${link}`}
-          onClick={() => {
-            handleClick(link);
-            setMenuOpen(false); // يغلق القائمة بعد الضغط
-          }}
-          className="py-2 px-3 text-gray-700 hover:text-black hover:bg-gray-100 rounded"
-        >
-          {link}
-        </a>
-      ))}
-    </div>
-  )}
+      {/* Mobile Menu Example */}
+      {menuOpen && (
+        <div className="absolute top-full right-0 w-48 bg-white shadow-lg flex flex-col text-right p-4 md:hidden">
+          {["الرئيسية", "عن المركز", "الخدمات", "الأسئلة الشائعة"].map(
+            (link) => (
+              <a
+                key={link}
+                href={`#${link}`}
+                onClick={() => {
+                  // handleClick(link);
+                  setMenuOpen(false); // يغلق القائمة بعد الضغط
+                }}
+                className="py-2 px-3 text-gray-700 hover:text-black hover:bg-gray-100 rounded"
+              >
+                {link}
+              </a>
+            )
+          )}
+        </div>
+      )}
     </header>
   );
 }

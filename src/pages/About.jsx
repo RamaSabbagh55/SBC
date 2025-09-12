@@ -29,18 +29,19 @@ export default function About() {
   viewport={{ once: false, amount: 0.3 }} > 
   {/*  false in  once means  the animation will repeat every scroll  */}
         <Htext title=" عن المركز" />
-        <h4 className=" text-xl  " style={{ color: "var(--secandaryColor--)" }}>
+        <h4 className=" text-md text-center  md:text-xl"  style={{ color: "var(--secandaryColor--)" }}>
           نُمكّن الأعمال من الانطلاق والنمو بسرعة وكفاءة أكبر من خلال تقديم
           خدمات متكاملة لتأسيس وممارسة وإنهاء الأعمال
         </h4>
-      </Motion.div>
-      <h4
-        className=" text-xl  mb-20 "
+           <h4
+        className=" text-md text-center  md:text-xl mb-20  "
         style={{ color: "var(--secandaryColor--)" }}
       >
         {" "}
         وفق أفضل المعايير الدولية وتحت إشراف موحد
       </h4>
+      </Motion.div>
+   
       {/* </div> */}
       <div className=" flex space-x-10  ">
         <AboutComponent

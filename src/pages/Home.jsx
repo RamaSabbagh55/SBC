@@ -24,24 +24,24 @@ export default function Home() {
         className="mt-20 space-y-7"
 
       >
-        <Motion.h2
+        <Motion.h2 
           initial={{scale:0.8 ,opacity: 0, y: 50}}
             whileInView={{ opacity: 1, y: 0 }}
             animate={{ scale:1}}
             transition={{ duration: 2,ease: "easeOut" }}// كل مازادت المدة كل ما الحركة صارت ابطأ
             viewport={{ once: false, amount: 0.8 }} 
-            className="text-4xl"
+            className="text-xl md:text-4xl"
 
         >
         المركز السعودي للأعمال
         </Motion.h2>
       
         <div className="space-y-1">
-          <h2 className="text-2xl max-w-3xl  text-gray-300   ">
+          <h2 className="text-sm max-w-3xl sm:text-2xl text-gray-300   ">
             مركز يُعنى بتيسير إجراءات بدء الأعمال الاقتصادية، ومزاولتها،
             وإنهائها
           </h2>
-          <h2 className="text-2xl max-w-3xl text-gray-300  ">
+          <h2 className=" text-sm  max-w-3xl sm:text-2xl  text-gray-300  ">
             وتقديم جميع الخدمات ذات الصلة؛ وفقًا لأفضل الممارسات الدولية
           </h2>
         </div>
