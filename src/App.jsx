@@ -6,10 +6,8 @@ import Header from "./components/Header";
 import Eservise from "./pages/Eservices";
 import FAQ from "./pages/FAQ";
 import Footer from "./components/Footer";
-import Sidebar from "./components/Sidebar"
-// import Our from "./pages/Our";
-// import FAQComponent from "./components/FAQComponent"
-// import Count from"./pages/Count"
+// import Sidebar from "./components/Sidebar"
+
 
 function App() {
   return (
@@ -20,8 +18,6 @@ function App() {
       <About />
       <Eservise />
       <FAQ/>
-      {/* <Our/> */}
-      {/* <Count/> */}
       <Footer/>
     </div>
   );

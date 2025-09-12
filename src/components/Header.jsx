@@ -1,6 +1,6 @@
 import logo from "../assets/sbcLogo.png";
 import VB from "../assets/visionBoard.png";
-import React, { useEffect, useState } from "react";
+import{useEffect,useState} from "react";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,11 +11,11 @@ export default function Header() {
       const sections = ["الرئيسية", "عن المركز", "الخدمات", "الأسئلة الشائعة"];
 
       for (let section of sections) {
-        const element = document.getElementById(section);
+        const element = document.getElementById(section);//.getBoundingClientRect() تجيب موقعه بالشاشة 
         if (element) {
           const rect = element.getBoundingClientRect();
           if (rect.top <= 100 && rect.bottom >= 100) {
-            setActive(section);
+            setActive(section);// اول شييستدعي سيت اكتف بعدين اكتف تحت
             break; // توقف البحث عن القسم البعده
           }
         }
@@ -28,18 +28,25 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+
+
+  useEffect(()=>{
+
+
+    document.title=  `Rama| ${active}`
+  } ,[active]);
+
   return (
     <header
       style={{
-        backgroundColor: "var(  --bgCircle--)",
+        backgroundColor: "var(--bgCircle--)",
         color: "var(--primaryColor--)",
       }}
-      className="  w-full fixed top-0 z-50 dark:bg-slate-800  "
-    >
-      <div className=" flex items-center justify-between   ">
+      className="w-full fixed top-0 z-50 dark:bg-slate-800">
+      <div className=" flex items-center justify-between">
         {/* Logo */}
         <div className=" flex  p-3 items-center justify-between text-md space-x-10 ">
-          {" "}
+          
           {/*flex start from LTR but in my case start from RTL CUZ    dir="rtl" in the index.html    */}
           <div className="flex justify-end space-x-5">
             <img src={logo} alt="شعار الموقع " width="150" height="50" />

@@ -60,7 +60,7 @@
 import { useState } from 'react';
 
 export default function RequestTracker() {
-  const [pending, setPending] = useState(0);
+  const [pending, setPending] = useState(0); //القيمة الاولى لل pending 
   const [completed, setCompleted] = useState(0);
 
   async function handleClick() {
