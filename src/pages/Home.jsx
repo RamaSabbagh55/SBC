@@ -1,14 +1,19 @@
 import React from "react";
-import bg from "../assets/bgSBCBlue.png";
+import bg from "../assets/bgsbc.png";
 import { motion as Motion } from "motion/react";
-// import Header from '../components/Header'
-// .. comeback to pages folder
-// why there is an error when the motion is imported?
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import FeatureCard from "../components/FeatureCard"
+import {
+  faLifeRing,
+  faHandshake,
+  faGlobe,
+  faChartLine,
+} from "@fortawesome/free-solid-svg-icons";
 export default function Home() {
   return (
     <div
       id="الرئيسية"
-      className="min-h-screen bg-cover bg-center flex flex-col justify-center items-center text-center  "
+      className="bg-cover bg-center  "
       style={{
         backgroundImage: `url(${bg}) `,
         backgroundColor: "var(--bgColor--)",
@@ -18,19 +23,19 @@ export default function Home() {
       <Motion.div
         initial={{ opacity: 0, y: 200 }} // بداية: شفاف وتحته
         whileInView={{ opacity: 1, y: 0 }}
-        // animate={{ opacity: 1 , y: 0 }} // بعد الدخول: شفاف بالكامل وفي مكانه
+        animate={{ opacity: 1 , y: 0 }} // بعد الدخول: شفاف بالكامل وفي مكانه
         transition={{ duration: 2,ease: "easeOut" }}// كل مازادت المدة كل ما الحركة صارت ابطأ
         viewport={{ once: false, amount: 0.8 }} 
-        className="mt-20 space-y-7"
-
+        className=" flex flex-col justify-around min-h-screen w-full p-6 "
       >
+        <div className="space-y-3">
         <Motion.h2 
           initial={{scale:0.8 ,opacity: 0, y: 50}}
             whileInView={{ opacity: 1, y: 0 }}
             animate={{ scale:1}}
             transition={{ duration: 2,ease: "easeOut" }}// كل مازادت المدة كل ما الحركة صارت ابطأ
             viewport={{ once: false, amount: 0.8 }} 
-            className="text-xl md:text-4xl"
+            className="text-xl md:text-4xl mt-2.5 "
 
         >
         المركز السعودي للأعمال
@@ -45,7 +50,16 @@ export default function Home() {
             وتقديم جميع الخدمات ذات الصلة؛ وفقًا لأفضل الممارسات الدولية
           </h2>
         </div>
+        </div>
+           <div className="flex md:flex-row  flex-col gap-14 ">
+    <FeatureCard icon={faHandshake} title="شراكة في النجاح"/>
+        <FeatureCard icon={faLifeRing} title=" تمكين الاعمال "/>
+        <FeatureCard icon={faGlobe} title="  معايير عالمية "/>
+        <FeatureCard icon={faChartLine} title="   موثوقية "/>
+
+    </div>
       </Motion.div>
+   
     </div>
   );
 }

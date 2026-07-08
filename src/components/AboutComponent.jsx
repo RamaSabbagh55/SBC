@@ -2,9 +2,9 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function AboutComponent({icon, h1, p1, p2}){
     return(
-               <div className="flex flex-col flex-wrap   items-center ">
+               <div className="flex flex-col flex-wrap   items-start ">
                   <div
-                    className="w-22 h-22 rounded-full flex items-center justify-center  mb-5"
+                    className="w-22 h-22 border-b-4 border-r-4 border-blue-800 rounded-xl flex items-center justify-center  mb-5"
                     style={{ backgroundColor: "var(--bgCircle--)" }}
                   >
                     <FontAwesomeIcon
@@ -20,10 +20,10 @@ export default function AboutComponent({icon, h1, p1, p2}){
                   >
                     {h1}  
                   </h2>
-                  <h4  className="text-md font-bold text-md text-center "
-                    style={{ color: "var(--secandaryColor--)" }}>{p1} </h4>
-                    <h5   className="text-md font-bold text-md text-center "
-                    style={{ color: "var(--secandaryColor--)"}}>{p2} </h5>
+                  <h4  className="text-md font-bold text-sm text-center "
+                    style={{ color: "var(--black--)" }}>{p1} </h4>
+                    <h5   className="text-md font-bold text-sm text-center "
+                    style={{ color: "var(--black--)"}}>{p2} </h5>
                 </div>
     )
 }

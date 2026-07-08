@@ -20,7 +20,7 @@ const Accordain = ({ title, answer }) => {
         className={`grid overflow-hidden  transition-all duration-300 ease-in-out font-extralight text-sm ${
           accordainOpen
             ? "grid-rows-[1fr]"
-            : "grid-rows-[0fr] "//fraction وحدة قياس مساحة 
+            : "grid-rows-[0fr] "
         }`}
       >
         <div className="text-black

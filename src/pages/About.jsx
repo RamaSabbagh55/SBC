@@ -6,6 +6,7 @@ import {
   faLifeRing,
   faLightbulb,
   faEnvelope,
+  faGlobe,
 } from "@fortawesome/free-solid-svg-icons";
 import AboutComponent from "../components/AboutComponent";
 
@@ -13,11 +14,8 @@ export default function About() {
   return (
     <div
       id="عن المركز"
-      className=" flex justify-center items-center flex-col  h-screen  "
-      style={{
-        color: "var(--primaryColor--)",
-        backgroundColor: "var(--bgColor--)",
-      }}
+      className=" flex justify-center items-center flex-col  min-h-screen  "
+     
     >
       {/* <div className=" flex flex-col  justify-center items-center  ">  */}
       {/* // focus  */}
@@ -28,27 +26,26 @@ export default function About() {
   transition={{ duration: 0.8, ease: "easeOut" }}
   viewport={{ once: false, amount: 0.3 }} > 
   {/*  false in  once means  the animation will repeat every scroll  */}
-        <Htext title=" عن المركز" />
-        <h4 className=" text-md text-center  md:text-xl"  style={{ color: "var(--secandaryColor--)" }}>
-          نُمكّن الأعمال من الانطلاق والنمو بسرعة وكفاءة أكبر من خلال تقديم
-          خدمات متكاملة لتأسيس وممارسة وإنهاء الأعمال
-        </h4>
-           <h4
-        className=" text-md text-center  md:text-xl mb-20  "
-        style={{ color: "var(--secandaryColor--)" }}
-      >
-        {" "}
-        وفق أفضل المعايير الدولية وتحت إشراف موحد
-      </h4>
+        <Htext title="  عن المركز السعودي للأعمال" className="mb-28" />
+       
       </Motion.div>
    
       {/* </div> */}
-      <div className=" flex space-x-10  ">
+      <div className="flex md:flex-row md:space-x-18 flex-col space-y-8 ">
+
+          <AboutComponent
+          icon={faGlobe}
+          h1="نبذة"
+          p1=" تقديم نموذج خدمات يعزز القدرة التنافسية "
+          p2="   وخلق بيئة أعمال جذابة   "
+        /> 
         <AboutComponent
           icon={faLifeRing}
           h1="الهدف"
-          p1="تسهيل بدء وممارسة الأعمال الاقتصادية"
-          p2="وتحسين جودة المتطلبات الحكومية"
+          p1="المساعدة في اتخاذ القرارات بناء على دراسة ومعالجة البيانات."
+          p2="تسهيل بدء وممارسة الأعمال الاقتصادية "
+
+
         />
 
         <AboutComponent
@@ -64,6 +61,8 @@ export default function About() {
           p1=" تقديم نموذج خدمات يعزز القدرة التنافسية "
           p2="   وخلق بيئة أعمال جذابة   "
         />
+
+        
       </div>
     </div>
   );

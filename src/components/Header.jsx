@@ -42,8 +42,8 @@ export default function Header() {
         backgroundColor: "var(--bgCircle--)",
         color: "var(--primaryColor--)",
       }}
-      className="w-full fixed top-0 z-50 dark:bg-slate-800">
-      <div className=" flex items-center justify-between">
+      className="w-full  fixed top-0 z-50 dark:bg-slate-800">
+      <div className=" flex  items-center justify-between ">
         {/* Logo */}
         <div className=" flex  p-3 items-center justify-between text-md space-x-10 ">
           
