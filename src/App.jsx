@@ -6,7 +6,6 @@ import Header from "./components/Header";
 import Eservise from "./pages/Eservices";
 import FAQ from "./pages/FAQ";
 import Footer from "./components/Footer";
-// import Sidebar from "./components/Sidebar"
 
 
 function App() {
