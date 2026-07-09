@@ -26,6 +26,8 @@ export default function About() {
   transition={{ duration: 0.8, ease: "easeOut" }}
   viewport={{ once: false, amount: 0.3 }} > 
   {/*  false in  once means  the animation will repeat every scroll  */}
+        <div className="mt-9"></div>
+
         <Htext title="  عن المركز السعودي للأعمال" className="mb-28" />
        
       </Motion.div>
