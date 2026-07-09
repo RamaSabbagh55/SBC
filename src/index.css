@@ -2,6 +2,26 @@
 
 @import "tailwindcss";
 
+@theme {
+--font-thamanyahDisplayBold: "ThamanyahDisplayBold";
+--font-thamanyahTextMeduim:"ThamanyahTextMeduim";
+--font-thamanyahTextLight:"ThamanyahTextLight";
+}
+/* define font */
+@font-face {
+  font-family: "ThamanyahDisplayBold";
+  src: url("../src/assets/fonts/thamanyahtypeface/thmanyahserifdisplay/woff2/thmanyahserifdisplay-Black.woff2");
+}
+
+@font-face {
+  font-family: "ThamanyahTextMeduim";
+  src: url("../src/assets/fonts/thamanyahtypeface/thmanyahseriftext/woff2/thmanyahseriftext-Medium.woff2");
+}
+
+@font-face{
+  font-family: "ThamanyahTextLight";
+  src: url("../src/assets/fonts/thamanyahtypeface/thmanyahseriftext/woff2/thmanyahseriftext-Light.woff2");
+}
 /* for general style  */
 :root {
   --primaryColor--: rgba(34, 83, 147);
@@ -10,54 +30,9 @@
   --textColor--: rgb(255, 255, 255);
   --bgCircle--: rgb(239, 246, 255);
   --black--: rgb(14, 7, 7);
-  --font-fontBold: "boldFont";
-  --extraBoldFont--: "extraBold";
-  --meduimFont--:"mediumFont":
-}
-/* تعريف خطوط مخصصة */
-@font-face {
-  font-family: "boldFont";
-  src: url(/src/assets/fonts/Tajawal-Bold.ttf);
+ 
 }
 
-@font-face {
-  font-family: "extraBold";
-  src: url(/src/assets/fonts/Tajawal-ExtraBold.ttf);
-}
-
- @font-face{
-font-family: "mediumFont" ;
-src: url(/src/assets/fonts/Tajawal-Medium.ttf)
-}
-
-/* @font-face{
-font-family: --mediumFont-- ;
-src: url(/src/assets/fonts/Tajawal-Medium.ttf)
-}
-
-
-@font-face{
-font-family: --regularFont-- ;
-src: url(/src/assets/fonts/Tajawal-Regular.ttf)
-} */
-
-h1,h2,nav , h3,p,span {
-  font-family: var(--font-fontBold)
-}
- /* h3,p,a{
-  font-family: var(--meduimFont--);
- } */
-/* *{
-    font-family: var(--meduimFont--);
-} */
-*{
-    font-family: var(--font-fontBold)
-
-}
-/* body {
-  margin: 0;
-  overflow-x: hidden;
-} */
 html, body {
   width: 100%;
   overflow-x: hidden;

@@ -13,7 +13,7 @@ export default function Footer() {
   return (
     <footer
       dir="ltr"
-      className=" text-white py-5 px-12"
+      className=" text-white font-ThamanyahTextMeduim py-5 px-12"
       style={{
         background: "var(--primaryColor--)",
         color: "var(--textColor--)",

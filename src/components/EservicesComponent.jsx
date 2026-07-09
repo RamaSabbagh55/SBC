@@ -16,7 +16,7 @@ export default function EsevicesCompoonent({ icon, text }) {
         <img src={icon} alt="goal icon" className="w-25 h-25" />
       </div>
       <h3
-        className=" mt-6 text-lg font-semibold  mt-6"
+        className=" mt-6 text-lg font-semibold font-thamanyahTextMeduim  mt-6"
         style={{ color: "var(--primaryColor--)" }}
       >
         {text}

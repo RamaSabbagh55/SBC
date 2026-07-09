@@ -1,9 +1,8 @@
 import React from "react";
 import { motion as Motion } from "motion/react";
 
-export default function Htext({ title,page, className="" })
+export default function Htext({ title, })
  {
- const isSpecialPage = page === "faq";
 
   return (
     <Motion.h2
@@ -11,7 +10,7 @@ export default function Htext({ title,page, className="" })
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
       viewport={{ once: false, amount: 0.3 }}
-      className= {` text-3xl font-bold  text-center  mb-10 ${isSpecialPage ? "text-3xl font-extrabold" : "font-light"} ${className}`} 
+      className= {` text-3xl font-thamanyahDisplayBold text-center  mb-10 `} 
       style={{ color: "var(--primaryColor--)" }}
     >
       {title}

@@ -8,7 +8,7 @@ const Accordain = ({ title, answer }) => {
     <div className=" py-5">
       <button
         onClick={() => setAccordainOpen(!accordainOpen)}
-        className="flex justify-between  w-full cursor-pointer"
+        className="flex  justify-between font-thamanyahTextMeduim  w-full cursor-pointer"
       >
         <span style={{ color: "var(--black--)" }}>{title}</span>
         {accordainOpen ? <span style={{ color: "var(--black--)" }}> <FontAwesomeIcon icon={faChevronUp}/> </span> : <span style={{ color: "var(----)" }}> <FontAwesomeIcon icon={faChevronDown}/> </span>}
@@ -24,7 +24,7 @@ const Accordain = ({ title, answer }) => {
         }`}
       >
         <div className="text-black
-         mt-2 overflow-hidden  text-md" >{answer} 
+         mt-2 overflow-hidden  font-thamanyahTextLight  text-md" >{answer} 
         </div>
       </div>
     </div>

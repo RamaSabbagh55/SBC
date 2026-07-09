@@ -14,7 +14,7 @@ export default function About() {
   return (
     <div
       id="عن المركز"
-      className=" flex justify-center items-center flex-col  min-h-screen  "
+      className=" flex justify-center items-center flex-col bg-blue-50 min-h-screen  "
      
     >
       {/* <div className=" flex flex-col  justify-center items-center  ">  */}
@@ -31,7 +31,7 @@ export default function About() {
       </Motion.div>
    
       {/* </div> */}
-      <div className="flex md:flex-row md:space-x-18 flex-col space-y-8 ">
+      <div className="flex md:flex-row md:space-x-18 flex-col space-y-8  font-thamanyahTextMeduim">
 
           <AboutComponent
           icon={faGlobe}

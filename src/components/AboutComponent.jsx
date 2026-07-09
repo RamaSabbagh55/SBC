@@ -20,9 +20,9 @@ export default function AboutComponent({icon, h1, p1, p2}){
                   >
                     {h1}  
                   </h2>
-                  <h4  className="text-md font-bold text-sm text-center "
+                  <h4  className="text-md text-sm text-center "
                     style={{ color: "var(--black--)" }}>{p1} </h4>
-                    <h5   className="text-md font-bold text-sm text-center "
+                    <h5   className="text-md  text-sm text-center "
                     style={{ color: "var(--black--)"}}>{p2} </h5>
                 </div>
     )
