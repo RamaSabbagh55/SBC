@@ -7,7 +7,7 @@ const FAQComponent = () => {
     < >
    {/* <Htext title="الأسئلة الشائعة " page ="faq" className="mt-24" /> */}
 
-    <div className='p-6 bg-white shadow-md rounded-xl  divide-y divide-gray-200  max-w-3/4 transition duration-200 ease-in-out hover:shadow-xl m-6'
+    <div className='p-6 bg-white shadow-md rounded-xl  divide-y divide-gray-200  min-w-3/4 transition duration-200 ease-in-out hover:shadow-xl m-6'
     ><Accordain
     title="ماهي البرامج التابعة للمركز السعودي للأعمال؟" 
     answer="برنامج قوائم والسجل الموحد للحقوق على الأموال المنقولة "/>

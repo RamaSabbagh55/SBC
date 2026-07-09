@@ -30,8 +30,7 @@ export default function Home() {
         <div className="space-y-3">
         <Motion.h2 
           initial={{scale:0.8 ,opacity: 0, y: 50}}
-            whileInView={{ opacity: 1, y: 0 }}
-            animate={{ scale:1}}
+            animate={{ opacity: 1, y: 0 ,scale:1}}
             transition={{ duration: 2,ease: "easeOut" }}// كل مازادت المدة كل ما الحركة صارت ابطأ
             viewport={{ once: false, amount: 0.8 }} 
             className="text-xl md:text-4xl mt-2.5 font-thamanyahDisplayBold "

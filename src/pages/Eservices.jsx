@@ -24,14 +24,21 @@ export default function Eservise() {
           <EsevicesCompoonent
           icon={gif1}
           text="  إدارة التفاويض  "
+          text2="خدمة إلكترونية لإدارة التفاويض ومتابعة 
+          الصلاحيات بكل كفاءة"
         /> 
              <EsevicesCompoonent
           icon={gif2}
           text=" تأسيس شركة مساهمة"
+          text2="خدمة إلكترونية لتأسيس الشركات المتخصصة
+           بكل سهولة ويسر"
         /> 
                 <EsevicesCompoonent
           icon={gif3}
           text=" توثيق التجارة الاإلكترونية  "
+          text2="خدمة إلكترونية تتيح إصدار وثائق الجمرك 
+          بشكل سريع وامن"
+
         /> 
 
 
