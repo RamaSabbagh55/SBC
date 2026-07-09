@@ -18,7 +18,8 @@ export default function Eservise() {
       // justify = تحديد محاذاة العناصر على المحور الرئيسي (Main Axis).
       style={{ color: "var(--bgColor--)" ,backgroundColor:"var(--bgColor--)"}}
     >
-      <Htext title="الخدمات الإلكترونية " />
+      <div className="mt-9"></div>
+      <Htext title="الخدمات الإلكترونية "  />
       <div className=" flex  flex-wrap  justify-center  gap-10 md:gap-y-14">
 
           <EsevicesCompoonent
